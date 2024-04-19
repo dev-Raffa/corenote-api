@@ -2,6 +2,7 @@ import 'dotenv/config';
 
 import { Provider } from '@nestjs/common';
 import { DataSource } from 'typeorm';
+import { NoteEntity } from '../../../app/contexts/notes/entity/note.entity';
 
 export const databaseProvider: Provider[] = [
   {
@@ -14,9 +15,7 @@ export const databaseProvider: Provider[] = [
         username: process.env.DB_USERNAME,
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME,
-        entities: [
-          /* app entities*/
-        ],
+        entities: [NoteEntity],
         synchronize: true
       });
 
