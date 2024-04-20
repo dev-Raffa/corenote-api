@@ -16,7 +16,8 @@ export const databaseProvider: Provider[] = [
         password: process.env.DB_PASSWORD,
         database: process.env.DB_NAME,
         entities: [NoteEntity],
-        synchronize: true
+        synchronize: true,
+        ssl: true
       });
 
       return dataSource.initialize();
