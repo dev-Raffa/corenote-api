@@ -1,4 +1,4 @@
-import { Validate } from '../Validate/validate.decorator';
+import { Validate } from '../validate/validate.decorator';
 import { NumberValidator } from '../../validators/number/number.validator';
 
 interface maxValueDecorator {

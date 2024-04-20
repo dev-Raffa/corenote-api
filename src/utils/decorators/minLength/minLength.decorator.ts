@@ -1,4 +1,4 @@
-import { Validate } from '../Validate/validate.decorator';
+import { Validate } from '../validate/validate.decorator';
 import { LengthValidator } from '../../../utils/validators/length/length.validator';
 
 interface minLengthDecorator {

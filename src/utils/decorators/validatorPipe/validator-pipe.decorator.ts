@@ -5,7 +5,7 @@ import {
   PipeTransform,
   Type
 } from '@nestjs/common';
-import { errorsException } from 'src/utils/types/ErrorsException/errorsException.type';
+import { errorsException } from '../../../utils/types/ErrorsException/errorsException.type';
 
 type validatorPipe = {
   createDTO: Type<any>;
